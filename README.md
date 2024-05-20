@@ -1,4 +1,4 @@
-# Tugas Praktikum { Pertemuan ke 9 } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
+# Tugas Praktikum { Pertemuan ke 10 } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
 
 
 |**Nama**|**NIM**|**Kelas**|**Matkul**|
@@ -80,9 +80,8 @@ DROP FOREIGN KEY fk_dosen;
 ```
 ALTER TABLE mahasiswa
 ADD CONSTRAINT fk_dosen
-FOREIGN KEY (kd_ds)
-REFERENCES dosen (kd_ds)
-ON DELETE SET NULL;
+FOREIGN KEY (kd_ds) REFERENCES dosen (kd_ds)
+ON UPDATE CASCADE ON DELETE SET NULL;
 ```
 ***Output :***
 
@@ -192,6 +191,6 @@ Dalam banyak kasus, pemilihan antara `RESTRICT dan CASCADE `tergantung pada kebu
 
 <img src=https://pngimg.com/uploads/google_drive/google_drive_PNG9.png width="110px" >
 
-- [Link Laporan Praktikum](https://bit.ly/3onAF8v)
+- [Link Laporan Praktikum](https://drive.google.com/file/d/1EDhwcfxuPu4QbGbK4FqENoDHZnkImGtA/view?usp=drive_link)
 
 ## FINISH
